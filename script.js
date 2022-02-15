@@ -32,3 +32,37 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+const toTop = document.querySelector(".to-top")
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 400) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active")
+  }
+})
+
+// Carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:20,
+  nav:false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  dots:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:3
+      },
+      1400:{
+          items:3
+      }
+  }
+})
