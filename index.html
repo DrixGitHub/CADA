@@ -6,20 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
     <title>ViewFinder</title>
 </head>
 <body>
     
-    <nav class="nav">
-        <h1>ViewFinder</h1>
-        <ul class="nav-btn">
-            <li><a class="nav-link" href="#">Porfolio</a></li>
-            <li><a class="nav-link" href="#team">Team</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>            
-        </ul>
-    </nav>
+    <header class="header">
+        <nav class="nav sticky">
+          <a class="view-title" href="#">
+            <h1>ViewFinder</h1>
+          </a>
+          <div class="navigation">
+            <ul class="navigation-btn">
+              <li><a class="nav-btn" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-btn" href="#team">Team</a></li>
+              <li><a class="nav-btn" href="#contact">Contact</a></li>              
+            </ul>
+          </div>
+  
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </nav>
 
-    <section id="welcome" class="hero grid">
+     <section id="welcome" class="hero grid">
         <div class="welcome-text">
             <h2 class="welcome-hero">Your moments viewed through lenses</h2>
             <p class="welcome-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime esse totam, voluptas molestias, tempora, et beatae laborum ut animi hic ratione enim minima iure impedit voluptatibus eligendi molestiae quidem. Expedita!</p>
@@ -88,7 +111,7 @@
         <div class="footer-details grid">
             <h3 class="footer-title">ViewFinder</h3>
             <p class="copyright">
-                Copyright &copy; <span class="year">2021</span> CADA
+                Copyright &copy; <span class="year">2021</span> ViewFinder
             </p>
 
             <ul class="social-media">

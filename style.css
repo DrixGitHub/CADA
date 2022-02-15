@@ -23,16 +23,20 @@ nav {
     display: flex;
     justify-content: space-between;
     line-height: 1.5;
-    padding: 3.2rem 3.2rem 6.4rem 2.4rem;
+    padding: 3.2rem 3.2rem 4.8rem 2.4rem;
     
 }
-.nav-btn{
+.view-title {
+    text-decoration: none;
+    color: #d4d4d4;
+}
+.navigation-btn{
     display: flex;
     gap: 1.5rem;
     list-style: none;    
 }
 
-.nav-link{
+.nav-btn{
     text-decoration: none;
     color: #d4d4d4;
     font-size: 1.6rem;
@@ -109,6 +113,7 @@ nav {
     text-align: center;
 }
 .project-link{
+    color: #d4d4d4;
     text-decoration: none;
 }
 .portfolio-img {
@@ -197,16 +202,85 @@ footer {
     width: 50%;
 }
 
+/* Navigation - mobile */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  .icon-mobile-nav {
+    height: 3.2rem;
+    width: 3.2rem;
+    color: #d4d4d4;
+  }
+  
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
 /* mobile styles */
+@media screen and (min-width: 20rem) {
+    
+}
+
 
 /* small tablet styles */
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 44rem) {
     
 }
 
 /* Large tablets and Small Laptops */
-@media screen and (min-width: 96rem) {
-    
+@media screen and (max-width: 44rem) {
+
+ /* Mobile Nav */
+ .btn-mobile-nav {
+    display: block;
+  }
+  .navigation {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .navigation-btn {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .nav-btn {
+    font-size: 2rem;
+    color: #d4d4d4;
+  }
+  .nav-open .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}    
+
 }
 
 /* Desktop */
