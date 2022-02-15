@@ -90,6 +90,19 @@ nav {
 
 /* Project Section */
 
+#portfolio {
+    padding: 2.4rem 2rem 2rem 3.2rem;
+}
+.portfolio-title{
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+.portfolio-text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -100,6 +113,88 @@ nav {
 }
 .portfolio-img {
     width: 90%;
+    margin-bottom: 1rem;
+}
+
+/* Team Section */
+
+#team {
+    padding: 2.4rem 2rem 2rem 3.2rem;
+}
+.team-text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+.people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.team-img {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+
+#contact {
+    padding: 2.4rem 2rem 2rem 3.2rem;
+}
+.contact-text {
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.3rem;
+    width: 100%;
+    height: 70%;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+}
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    
+}
+.social-media {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.footer-heading{ 
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+} 
+.footer-list{
+    list-style: none;
+    font-size: 1.2rem;    
+} 
+.footer-text {
+    text-decoration: none;
+    color: #d4d4d4;
+    line-height: 2;
+}
+.footer-title {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+.media-instagram {
+    width: 50%;
 }
 
 /* mobile styles */
