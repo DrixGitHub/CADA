@@ -1,3 +1,8 @@
+// Copyright
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
 // Mobile Navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -33,10 +38,11 @@ allLinks.forEach(function (link) {
   });
 });
 
+// Back to top button
 const toTop = document.querySelector(".to-top")
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 400) {
+  if (window.pageYOffset > 550) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active")
