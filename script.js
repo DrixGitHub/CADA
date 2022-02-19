@@ -42,7 +42,7 @@ allLinks.forEach(function (link) {
 const toTop = document.querySelector(".to-top")
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 550) {
+  if (window.pageYOffset > 540) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active")
